@@ -1,4 +1,4 @@
-\# TicTacToe
+TicTacToe
 
 
 
@@ -6,25 +6,23 @@ Dieses Projekt ist eine einfache Implementierung des TicTacToe-Spiels in Java.
 
 
 
-\## Inhalt
+Inhalt
+
+\- Über das Projekt
+
+\- Installation
+
+\- Verwendung
+
+\- Features
+
+\- CI/CD
+
+\- Projektstruktur
 
 
 
-\- \[Über das Projekt](#über-das-projekt)
-
-\- \[Installation](#installation)
-
-\- \[Verwendung](#verwendung)
-
-\- \[Features](#features)
-
-\- \[CI/CD](#cicd)
-
-\- \[Projektstruktur](#projektstruktur)
-
-
-
-\## Über das Projekt
+Über das Projekt
 
 
 
@@ -32,13 +30,11 @@ Dieses Projekt implementiert ein Konsolen-basiertes TicTacToe-Spiel für zwei Sp
 
 
 
-\## Installation
+Installation
 
 
 
-\### Voraussetzungen
-
-
+Voraussetzungen:
 
 \- Java Development Kit (JDK) 11 oder höher
 
@@ -46,81 +42,63 @@ Dieses Projekt implementiert ein Konsolen-basiertes TicTacToe-Spiel für zwei Sp
 
 
 
-\### Schritte zur Installation
-
-
+Schritte zur Installation:
 
 1\. Repository klonen:
-
-&nbsp;  ```bash
 
 &nbsp;  git clone https://github.com/tarekh-97/tictactoe-java.git
 
 &nbsp;  cd tictactoe-java/tictactoe
 
-Projekt bauen:
 
 
+2\. Projekt bauen:
 
-bash
+&nbsp;  mvn clean package
 
-Kopieren
 
-Bearbeiten
-
-mvn clean package
 
 Verwendung
+
+
 
 Nach dem erfolgreichen Build kann das Spiel ausgeführt und über die Konsole gespielt werden.
 
 
 
-Spielanleitung
+Spielanleitung:
 
-Zwei Spieler spielen abwechselnd.
+\- Zwei Spieler spielen abwechselnd.
 
+\- Züge werden eingegeben durch Angabe von Zeile und Spalte (z. B. "1 1" für die Mitte).
 
+\- Nach jedem Zug wird das aktuelle Spielfeld angezeigt.
 
-Züge werden eingegeben durch Angabe von Zeile und Spalte (z. B. 1 1 für die Mitte).
+\- Das Spiel erkennt automatisch einen Sieg oder ein Unentschieden.
 
-
-
-Nach jedem Zug wird das aktuelle Spielfeld angezeigt.
-
-
-
-Das Spiel erkennt automatisch einen Sieg oder ein Unentschieden.
-
-
-
-Nach dem Ende kann ein neues Spiel gestartet werden.
+\- Nach dem Ende kann ein neues Spiel gestartet werden.
 
 
 
 Features
 
-Zwei-Spieler-Modus über Konsole
 
 
+\- Zwei-Spieler-Modus über Konsole
 
-Automatische Spielend-Erkennung (Sieg/Unentschieden)
+\- Automatische Spielend-Erkennung (Sieg/Unentschieden)
 
+\- Dynamische Spielfeldanzeige
 
+\- Möglichkeit zum Neustart
 
-Dynamische Spielfeldanzeige
-
-
-
-Möglichkeit zum Neustart
-
-
-
-Spielerwechsel nach jedem Zug
+\- Spielerwechsel nach jedem Zug
 
 
 
 CI/CD
+
+
 
 Die GitHub Actions Konfiguration befindet sich in .github/workflows/ci.yml. Sie sorgt dafür, dass das Projekt bei jedem Push und Pull Request automatisch gebaut und getestet wird.
 
@@ -128,11 +106,7 @@ Die GitHub Actions Konfiguration befindet sich in .github/workflows/ci.yml. Sie 
 
 Projektstruktur
 
-bash
 
-Kopieren
-
-Bearbeiten
 
 tictactoe/
 
@@ -157,4 +131,6 @@ tictactoe/
 ├── pom.xml
 
 └── .github/workflows/ci.yml
+
+
 
