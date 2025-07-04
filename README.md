@@ -65,3 +65,6 @@ src/main/java: Enthält den Quellcode des Projekts.
 src/test/java: Enthält die Unit-Tests für das Projekt.
 .github/workflows: Enthält die GitHub Actions Workflow-Datei für CI/CD.
 pom.xml: Maven Projektdatei, die Abhängigkeiten und Build-Konfigurationen definiert.
+
+
+Tarek Hitalani - Ali Ahmadi
